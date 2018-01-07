@@ -48,7 +48,7 @@ Object.defineProperties(window, {
           linkLength++;
         }
       } catch (e) {
-        alert('遇到未知问题，请刷新页面')
+        alert('Unkown Problems.')
       }
     }
   }

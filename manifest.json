@@ -1,18 +1,16 @@
 {
   "manifest_version": 2,
-  "name": "nenu-jwc-repair",
-  "version": "2.0.9",
-  "description": "东北师大教务处修复插件",
+  "name": "upc_jwxt",
+  "version": "1.0.0",
+  "description": "解决 中国石油大学（华东）教务系统 非IE核心不能创建对象，权限错误问题。",
   "icons": {
-    "16": "images/icon16.png",
-    "48": "images/icon48.png",
-    "128": "images/icon128.png"
+    "128": "icon.png"
   },
   "permissions": [
     "<all_urls>"
   ],
   "content_scripts": [{
-    "matches": ["http://dsjx.nenu.edu.cn/*"],
+    "matches": ["http://jwxt.upc.edu.cn/*"],
     "js": ["inject.js"],
     "all_frames": true,
     "run_at": "document_start"
